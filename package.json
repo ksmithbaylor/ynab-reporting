@@ -4,6 +4,7 @@
   "description": "An electron-based reporting tool for YNAB data, written in Elm",
   "main": "index.js",
   "scripts": {
+    "start": "electron .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -15,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/ksmithbaylor/ynab-reporting/issues"
   },
-  "homepage": "https://github.com/ksmithbaylor/ynab-reporting#readme"
+  "homepage": "https://github.com/ksmithbaylor/ynab-reporting#readme",
+  "dependencies": {
+    "electron": "^1.4.13"
+  }
 }
