@@ -1,0 +1,19 @@
+{
+  "name": "ynab-reporting",
+  "version": "1.0.0",
+  "description": "An electron-based reporting tool for YNAB data, written in Elm",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ksmithbaylor/ynab-reporting.git"
+  },
+  "author": "Kevin Smith <ksmithbaylor@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ksmithbaylor/ynab-reporting/issues"
+  },
+  "homepage": "https://github.com/ksmithbaylor/ynab-reporting#readme"
+}
