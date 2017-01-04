@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "npm run compile && electron .",
-    "compile": "elm-make src/elm/Main.elm --output=build/bundle.js",
+    "compile": "webpack",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -20,6 +20,8 @@
   "homepage": "https://github.com/ksmithbaylor/ynab-reporting#readme",
   "dependencies": {
     "electron": "^1.4.13",
-    "elm": "^0.18.0"
+    "elm": "^0.18.0",
+    "elm-webpack-loader": "^4.1.1",
+    "webpack": "^1.14.0"
   }
 }

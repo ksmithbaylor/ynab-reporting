@@ -1,4 +1,4 @@
-const Elm = require('../build/bundle.js');
+const Elm = require('../elm/Main');
 
 const target = document.getElementById('root');
 const app = Elm.Main.embed(target);
