@@ -1,3 +1,5 @@
+const CopyWebpackPlugin = require('copy-webpack-plugin');
+
 module.exports = {
   entry: './src/js/index.js',
   output: {
@@ -9,11 +11,19 @@ module.exports = {
       {
         test: /.elm$/,
         exclude: [/elm-stuff/, /node_modules/],
-        loader: 'elm-webpack?verbose=true&warn=true'
+        loader: 'elm-hot!elm-webpack?verbose=true&warn=true'
       }
     ]
   },
   resolve: {
     extensions: ['', '.js', '.elm']
+  },
+  plugins: [
+    new CopyWebpackPlugin([{ from: './src/index.html' }])
+  ],
+  devServer: {
+    stats: {
+      children: false
+    }
   }
 };

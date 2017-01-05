@@ -12,7 +12,10 @@ function createWindow() {
     height: 768
   });
 
-  mainWindow.loadURL(`file://${__dirname}/src/index.html`);
+  mainWindow.loadURL(process.env.HOT
+    ? `http://localhost:3000/index.html`
+    : `file://${__dirname}/build/index.html`
+  );
   mainWindow.webContents.openDevTools();
 
   mainWindow.on('closed', () => {
